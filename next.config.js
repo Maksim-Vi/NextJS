@@ -13,5 +13,5 @@ module.exports = {
 
         }
     },
-  assetPrefix: !debug ? 'https://github.com/Maksim-Vi/NextJS' : '',
+  assetPrefix: !debug ? 'https://maksim-vi.github.io/NextJS/' : '',
 }
