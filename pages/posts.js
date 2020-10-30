@@ -9,7 +9,7 @@ export default function Posts({data}) {
         <ul>
             {data.map(post=>(
                 <li key={post.id}>
-                 <Link href={`/post/[id]`} as={`/post/${post.id}`}><a>{post.title}</a></Link>
+                 <Link href={`/post/[id]`} as={ process.env.BACKEND_URL + `/post/${post.id}`}><a>{post.title}</a></Link>
                 </li>
             ))}
         </ul>
