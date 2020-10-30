@@ -9,7 +9,7 @@ export default function Post({data}) {
         <h1>{data.title}</h1>
         <hr />
         <p>{data.description}</p>
-        <Link href="/posts"><a>Back to all posts</a></Link>
+        <Link href="/posts" as={ process.env.BACKEND_URL + '/posts'}><a>Back to all posts</a></Link>
     </MainLayout>
     )
 }

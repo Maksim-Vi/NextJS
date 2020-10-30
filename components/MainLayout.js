@@ -9,9 +9,9 @@ export default function MaynLayout({children, title='This test Course Next'}){
             <meta name="description" content="some text desc"/>
         </Head>
         <nav>
-            <Link href="/"><a>Home</a></Link>
-            <Link href="/about"><a>About</a></Link>
-            <Link href="/posts"><a >Posts</a></Link>
+            <Link href="/" as={ process.env.BACKEND_URL + '/'}><a>Home</a></Link>
+            <Link href="/about" as={ process.env.BACKEND_URL + '/about'}><a>About</a></Link>
+            <Link href="/posts" as={ process.env.BACKEND_URL + '/posts'}><a >Posts</a></Link>
         </nav>
         <main>
             {children}
